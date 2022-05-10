@@ -1,0 +1,687 @@
+variables:
+	{announce.auto} = false
+
+on load:
+	wait 1 sec
+	set {announce.auto} to true
+
+command /announce [<text>]:
+	aliases: /an 
+	trigger:
+		if arg-1 is "staff":
+			send " " to all players
+			send "&r &r &r &r &r &r &r &r &b&l<< &3&l! &b&l>> Sillycybin Announcement" to all players
+			send "&r &fIf you would like to apply for staff it is very easy!" to all players
+			send "&r &r &r &r just create a post on the forums under the" to all players
+			send "&r &fStaff Applications section. We always need good staff!" to all players
+			send " " to all players
+			stop
+		else if arg-1 is "bedrock":
+			send " " to all players
+			send "&r &r &r &r &r &r &r &r&b&l<< &3&l! &b&l>> Sillycybin Announcement" to all players
+			send "&fBedrock is available to buy in the server shop! Be" to all players
+			send "&r &r careful when you place the bedrock though," to all players
+			send " &fyou need a bedrock pickaxe in order to mine the blocks!" to all players
+			send " " to all players
+			stop
+		else if arg-1 is "threeislands":
+			send " " to all players
+			send "&r &r &r &r &r &r &r &r&b&l<< &3&l! &b&l>> Sillycybin Announcement" to all players
+			send "&fEvery player technically has three different islands" to all players
+			send " &r &rYou get an overworld island, a nether island" to all players
+			send  " &fAnd an ender island! Be sure to take advantage of space!" to all players 
+			send " " to all players
+			stop
+		else if arg-1 is "endportal":
+			send " " to all players
+			send "&r &r &r &r &r &r &r&b&l<< &3&l! &b&l>> Sillycybin Announcement" to all players
+			send "&fWhen you are creating your portal to the end, make" to all players
+			send "&r &r sure you build it from the inside. Stand" to all players
+			send " &fin the middle of the portal or it might not work!" to all players
+			send " " to all players
+			stop
+		else if arg-1 is "sale":
+			send " " to all players
+			send "&r &r &r &r &r &r &r&b&l<< &3&l! &b&l>> Sillycybin Announcement" to all players
+			send " &fOur server is currently having a 40 percent off sale for" to all players
+			send "&r &r &reverything in the shop! Take advantage" to all players
+			send "&r &fit wont be here long! Donate with the command /buy" to all players		
+			stop
+		else if arg-1 is "endpickaxe":
+			send " " to all players
+			send "&r &r &r &r &r &r &r&b&l<< &3&l! &b&l>> Sillycybin Announcement" to all players
+			send " &fBe careful when you are placing your end portal frames." to all players
+			send "&r &r if you place them wrong and dont have the" to all players
+			send " &fend portal pickaxe it might be there for quite awhile!" to all players
+			send " " to all players
+			stop
+		else if arg-1 is "enchants":
+			send " " to all players
+			send "&r &r &r &r &r &r &r&b&l<< &3&l! &b&l>> Sillycybin Announcement" to all players
+			send "&r &fOur server offers some unique custom enchants! In" to all players
+			send "&r &r &forder to see the enchantment visit the" to all players
+			send "&fnpc that is located at the [crates] warp!" to all players
+			send " " to all players
+			stop
+		else if arg-1 is "drugspvp":
+			send " " to all players
+			send "&r &r &r &r &r &r &r&b&l<< &3&l! &b&l>> Sillycybin Announcement" to all players
+			send " &fBe careful when you go to sell drugs at spawn! PvP is" to all players
+			send "&r &r enabled where the trafficker is, stay catious" to all players
+			send " &fof people hiding there waiting to take all of your stash!" to all players
+			send " " to all players
+			stop
+		else if arg-1 is "jobs":
+			send " " 
+			send "&r &r &r &r &r &r &r&b&l<< &3&l! &b&l>> Sillycybin Announcement" to all players
+			send " &fYou can join a job by typing [jobs]. Jobs are good for" to all players
+			send "&r &r &fkeeping a consistent flow of income while" to all players
+			send " &fdoing normal things you do with your time on Sillycybin." to all players
+			send " " to all players
+			stop
+		else if arg-1 is "report":
+			send " "
+			send "&r &r &r &r &r &r &r&b&l<< &3&l! &b&l>> Sillycybin Announcement" to all players
+			send "&r &fIf you witness a player hacking or using exploits you" to all players
+			send "&f&lcan you the command [report] to report that specific player." to all players
+			send "&r &r &fthat specific player. You can also make a forums post." to all players
+			send " " to all players
+			stop
+		else if arg-1 is "playershops":
+			send " "
+			send "&r &r &r &r &r &r &r&b&l<< &3&l! &b&l>> Sillycybin Announcement" to all players
+			send " &fPlayershops are available for rent at spawn. Visit the" to all players
+			send "&r &r &fplayershops warp and try to get you a spot!" to all players
+			send " &fyou can sell anything you want to players with no worry!" to all players
+			send " " to all players
+			stop
+		else if arg-1 is not set:
+			send "&cYou need to add a text!" to player
+			stop
+		else if arg-1 is "donations":
+			send " " to all players
+			send "&r &r &r &r &r &r &r&b&l<< &3&l! &b&l>> Sillycybin Announcement" to all players
+			send " &fOur server is ran off of donations from the people." to all players
+			send " &fif you enjoy our server and want to see great things." to all players
+			send " &fcontinue to happen please consider donating with [buy]" to all players
+			send " " to all players
+			stop
+		else if arg-1 is "suggestions":
+			send " " to all players
+			send "&r &r &r &r &r &r &r&b&l<< &3&l! &b&l>> Sillycybin Announcement" to all players
+			send " &fSuggestions are always welcome! If you have one please" to all players
+			send "&r &r &fcreate a forums post under the suggestions" to all players
+			send "&fcreate a forums post under the suggestions" to all players
+			send " " to all players
+			stop
+		else if arg-1 is "rules":
+			send " " to all players
+			send "&r &r &r &r &r &r &r&b&l<< &3&l! &b&l>> Sillycybin Announcement" to all players
+			send "&fPlease read the server rules with [rules]. Breaking rules" to all players
+			send "&r &r &fcan result in punishment and nobody wants that." to all players
+			send " " to all players
+			stop
+		else if arg-1 is "chemist":
+			send " " to all players 
+			send "&r &r &r &r &r &r &r&b&l<< &3&l! &b&l>> Sillycybin Announcement" to all players
+			send "&f You can buy additives to use to create different drugs" to all players 
+			send "&r &r &fif you visit The Chemist in spawn! Information" to all players 
+			send "&fon creating different drugs can be found on the [forums]." to all players 
+			send " " to all players 
+			stop
+		else if arg-1 is "scamming":
+			send " " to all players
+			send "&r &r &r &r &r &r &r&b&l<< &3&l! &b&l>> Sillycybin Announcement" to all players
+			send "&fRemember that &4&lscamming&f is allowed on the server!" to all players
+			send "&r &r &fbe careful when you make purchases or sales!" to all players
+			send "&fOnce you hit &7Supplier&f you can make safe auctions!" to all players
+			send " " to all players 
+			stop
+		else if arg-1 is "events":
+			send " " to all players
+			send "&r &r &r &r &r &r &r&b&l<< &3&l! &b&l>> Sillycybin Announcement" to all players
+			send "&fThanks for downloading my &3&lAutomatic Broadcast" to all players
+			send "&r &r plugin! I hope it will fit your server well!" to all players
+			send "&bIf you need any support please visit our discord!" to all players
+			send " " to all players
+			stop
+		else if arg-1 is "drugs":
+			send " " to all players
+			send "&r &r &r &r &r &r &r&b&l<< &3&l! &b&l>> Sillycybin Announcement" to all players
+			send "&fThanks for downloading my &3&lAutomatic Broadcast" to all players
+			send "&r &r plugin! I hope it will fit your server well!" to all players
+			send "&bIf you need any support please visit our discord!" to all players
+			send " " to all players
+			stop
+		else if arg-1 is "gamble":
+			send " " to all players
+			send "&r &r &r &r &r &r &r&b&l<< &3&l! &b&l>> Sillycybin Announcement" to all players
+			send "&fThanks for downloading my &3&lAutomatic Broadcast" to all players
+			send "&r &r plugin! I hope it will fit your server well!" to all players
+			send "&bIf you need any support please visit our discord!" to all players
+			send " " to all players
+			stop
+		else if arg-1 is "vote":
+			send " " to all players
+			send "&r &r &r &r &r &r &r&b&l<< &3&l! &b&l>> Sillycybin Announcement" to all players
+			send "&fThanks for downloading my &3&lAutomatic Broadcast" to all players
+			send "&r &r plugin! I hope it will fit your server well!" to all players
+			send "&bIf you need any support please visit our discord!" to all players
+			send " " to all players
+			stop
+		else if arg-1 is "development":
+			send " " to all players
+			send "&r &r &r &r &r &r &r&b&l<< &3&l! &b&l>> Sillycybin Announcement" to all players
+			send "&fThanks for downloading my &3&lAutomatic Broadcast" to all players
+			send "&r &r plugin! I hope it will fit your server well!" to all players
+			send "&bIf you need any support please visit our discord!" to all players
+			send " " to all players
+			stop
+		else if arg-1 is "helpmenu":
+			send " " to all players
+			send "&r &r &r &r &r &r &r&b&l<< &3&l! &b&l>> Sillycybin Announcement" to all players
+			send "&fThanks for downloading my &3&lAutomatic Broadcast" to all players
+			send "&r &r plugin! I hope it will fit your server well!" to all players
+			send "&bIf you need any support please visit our discord!" to all players
+			send " " to all players
+			stop
+		else if arg-1 is "discord":
+			send " " to all players
+			send "&r &r &r &r &r &r &r&b&l<< &3&l! &b&l>> Sillycybin Announcement" to all players
+			send "&fThanks for downloading my &3&lAutomatic Broadcast" to all players
+			send "&r &r plugin! I hope it will fit your server well!" to all players
+			send "&bIf you need any support please visit our discord!" to all players
+			send " " to all players
+			stop
+		else if arg-1 is "list":
+			send " "
+			send "&r &r &r &r &r &r &a&lAnnouncement List"
+			send " "
+			send "&r &bStaff , Bedrock , Threeislands, Endportal, Sale,"
+			send "&r &bEnpdpickaxe, Enchants, Drugspvp, Jobs, Report,"
+			send "&r &bPlayershops, Donations, Suggestions, Rules, Chemist,"
+			send " "
+			send "&r &r &r &r &r &r &a&lFor more: /announce list2"
+			send " "
+		else if arg-1 is "list2":
+			send "&r &r &r &r &r &r &a&lAnnouncement List"
+			send " "
+			send "&r &bScamming, Events, Drugs, Gamble, Vote,"
+			send "&r &bDevelopment, Helpmenu, Discord"
+			send " "
+			send "&r &r &r &r &r &r &a&lThe list is over,"
+			send "&r &r &r &r &r &r &r &a&lyou can add more in the skript!"
+			send " "
+		else: 
+			send "&cUsage: /announce <text>"
+			
+		
+		
+		
+		
+command /autoannounce [<text>] [<text>]:  
+	aliases: /aannounce
+	trigger:
+		if arg-1 is "on":
+			if {announce.auto} is false:
+				set {announce.auto} to true
+				send "&bAuto announce set to &lon!"
+			else if {announce.auto} is true:
+				send "&cIts already set to &lon!"
+			stop
+		else if arg-1 is "staff":
+			if {announce.auto} is true:
+				if arg-2 is not set:
+					set {_time} to "5 minutes" parsed as timespan
+					send "&bSuccesfully started &l%arg-1% &rauto announcement! It will be shown in 5 minutes"
+				if arg-2 is set:
+					send "&bSuccesfully started &l%arg-1% &rauto announcement! It will be shown in %arg-2% minutes"
+					set {_time} to "%arg-2% minutes" parsed as timespan
+					while {announce.auto} is true:
+						wait 1 tick
+						wait {_time}
+						send " " to all players
+						send "&r &r &r &r &r &r &r &r &b&l<< &3&l! &b&l>> Sillycybin Announcement" to all players
+						send "&r &fIf you would like to apply for staff it is very easy!" to all players
+						send "&r &r &r &r just create a post on the forums under the" to all players
+						send "&r &fStaff Applications section. We always need good staff!" to all players
+						send " " to all players
+			else if {announce.auto} is false:
+				send "&cAuto announce is false, try set it on by using &l/autoannounce on"
+		else if arg-1 is "bedrock":
+			if {announce.auto} is true:
+				if arg-2 is not set:
+					set {_time} to "5 minutes" parsed as timespan
+					send "&bSuccesfully started &l%arg-1% &rauto announcement! It will be shown in 5 minutes"
+				if arg-2 is set:
+					send "&bSuccesfully started &l%arg-1% &rauto announcement! It will be shown in %arg-2% minutes"
+					set {_time} to "%arg-2% minutes" parsed as timespan
+					while {announce.auto} is true:
+						wait 1 tick
+						wait {_time}
+						send " " to all players
+						send "&r &r &r &r &r &r &r &r&b&l<< &3&l! &b&l>> Sillycybin Announcement" to all players
+						send "&fBedrock is available to buy in the server shop! Be" to all players
+						send "&r &r careful when you place the bedrock though," to all players
+						send " &fyou need a bedrock pickaxe in order to mine the blocks!" to all players
+						send " " to all players
+			else if {announce.auto} is false:
+				send "&cAuto announce is false, try set it on by using &l/autoannounce on"
+		else if arg-1 is "threeislands":
+			if {announce.auto} is true:
+				if arg-2 is not set:
+					set {_time} to "5 minutes" parsed as timespan
+					send "&bSuccesfully started &l%arg-1% &rauto announcement! It will be shown in 5 minutes"
+				if arg-2 is set:
+					send "&bSuccesfully started &l%arg-1% &rauto announcement! It will be shown in %arg-2% minutes"
+					set {_time} to "%arg-2% minutes" parsed as timespan
+					while {announce.auto} is true:
+						wait 1 tick
+						wait {_time}
+						send " " to all players
+						send "&r &r &r &r &r &r &r &r&b&l<< &3&l! &b&l>> Sillycybin Announcement" to all players
+						send "&fEvery player technically has three different islands" to all players
+						send " &r &rYou get an overworld island, a nether island" to all players
+						send  " &fAnd an ender island! Be sure to take advantage of space!" to all players 
+						send " " to all players
+			else if {announce.auto} is false:
+				send "&cAuto announce is false, try set it on by using &l/autoannounce on"
+		else if arg-1 is "endportal":
+			if {announce.auto} is true:
+				if arg-2 is not set:
+					set {_time} to "5 minutes" parsed as timespan
+					send "&bSuccesfully started &l%arg-1% &rauto announcement! It will be shown in 5 minutes"
+				if arg-2 is set:
+					send "&bSuccesfully started &l%arg-1% &rauto announcement! It will be shown in %arg-2% minutes"
+					set {_time} to "%arg-2% minutes" parsed as timespan
+					while {announce.auto} is true:
+						wait 1 tick
+						wait {_time}
+						send " " to all players
+						send "&r &r &r &r &r &r &r&b&l<< &3&l! &b&l>> Sillycybin Announcement" to all players
+						send "&fWhen you are creating your portal to the end, make" to all players
+						send "&r &r sure you build it from the inside. Stand" to all players
+						send " &fin the middle of the portal or it might not work!" to all players
+						send " " to all players
+			else if {announce.auto} is false:
+				send "&cAuto announce is false, try set it on by using &l/autoannounce on"
+		else if arg-1 is "sale":
+			if {announce.auto} is true:
+				if arg-2 is not set:
+					set {_time} to "5 minutes" parsed as timespan
+					send "&bSuccesfully started &l%arg-1% &rauto announcement! It will be shown in 5 minutes"
+				if arg-2 is set:
+					send "&bSuccesfully started &l%arg-1% &rauto announcement! It will be shown in %arg-2% minutes"
+					set {_time} to "%arg-2% minutes" parsed as timespan
+					while {announce.auto} is true:
+						wait 1 tick
+						wait {_time}
+						send " " to all players
+						send "&r &r &r &r &r &r &r&b&l<< &3&l! &b&l>> Sillycybin Announcement" to all players
+						send " &fOur server is currently having a 40 percent off sale for" to all players
+						send "&r &r &reverything in the shop! Take advantage" to all players
+						send "&r &fit wont be here long! Donate with the command /buy" to all players		
+						send " " to all players
+			else if {announce.auto} is false:
+				send "&cAuto announce is false, try set it on by using &l/autoannounce on"
+		else if arg-1 is "endpickaxe":
+			if {announce.auto} is true:
+				if arg-2 is not set:
+					set {_time} to "5 minutes" parsed as timespan
+					send "&bSuccesfully started &l%arg-1% &rauto announcement! It will be shown in 5 minutes"
+				if arg-2 is set:
+					send "&bSuccesfully started &l%arg-1% &rauto announcement! It will be shown in %arg-2% minutes"
+					set {_time} to "%arg-2% minutes" parsed as timespan
+					while {announce.auto} is true:
+						wait 1 tick
+						wait {_time}
+						send " " to all players
+						send "&r &r &r &r &r &r &r&b&l<< &3&l! &b&l>> Sillycybin Announcement" to all players
+						send " &fBe careful when you are placing your end portal frames." to all players
+						send "&r &r if you place them wrong and dont have the" to all players
+						send " &fend portal pickaxe it might be there for quite awhile!" to all players
+						send " " to all players
+			else if {announce.auto} is false:
+				send "&cAuto announce is false, try set it on by using &l/autoannounce on"
+		else if arg-1 is "enchants":
+			if {announce.auto} is true:
+				if arg-2 is not set:
+					set {_time} to "5 minutes" parsed as timespan
+					send "&bSuccesfully started &l%arg-1% &rauto announcement! It will be shown in 5 minutes"
+				if arg-2 is set:
+					send "&bSuccesfully started &l%arg-1% &rauto announcement! It will be shown in %arg-2% minutes"
+					set {_time} to "%arg-2% minutes" parsed as timespan
+					while {announce.auto} is true:
+						wait 1 tick
+						wait {_time}
+						send " " to all players
+						send "&r &r &r &r &r &r &r&b&l<< &3&l! &b&l>> Sillycybin Announcement" to all players
+						send "&r &fOur server offers some unique custom enchants! In" to all players
+						send "&r &r &forder to see the enchantment visit the" to all players
+						send "&fnpc that is located at the [crates] warp!" to all players
+						send " " to all players
+			else if {announce.auto} is false:
+				send "&cAuto announce is false, try set it on by using &l/autoannounce on"
+		else if arg-1 is "drugspvp":
+			if {announce.auto} is true:
+				if arg-2 is not set:
+					set {_time} to "5 minutes" parsed as timespan
+					send "&bSuccesfully started &l%arg-1% &rauto announcement! It will be shown in 5 minutes"
+				if arg-2 is set:
+					send "&bSuccesfully started &l%arg-1% &rauto announcement! It will be shown in %arg-2% minutes"
+					set {_time} to "%arg-2% minutes" parsed as timespan
+					while {announce.auto} is true:
+						wait 1 tick
+						wait {_time}
+						send " " to all players
+						send "&r &r &r &r &r &r &r&b&l<< &3&l! &b&l>> Sillycybin Announcement" to all players
+						send " &fBe careful when you go to sell drugs at spawn! PvP is" to all players
+						send "&r &r enabled where the trafficker is, stay catious" to all players
+						send " &fof people hiding there waiting to take all of your stash!" to all players
+						send " " to all players
+			else if {announce.auto} is false:
+				send "&cAuto announce is false, try set it on by using &l/autoannounce on"
+		else if arg-1 is "jobs":
+			if {announce.auto} is true:	
+				if arg-2 is not set:
+					set {_time} to "5 minutes" parsed as timespan
+					send "&bSuccesfully started &l%arg-1% &rauto announcement! It will be shown in 5 minutes"
+				if arg-2 is set:
+					send "&bSuccesfully started &l%arg-1% &rauto announcement! It will be shown in %arg-2% minutes"
+					set {_time} to "%arg-2% minutes" parsed as timespan
+					while {announce.auto} is true:
+						wait 1 tick
+						wait {_time}
+						send " " to all players
+						send "&r &r &r &r &r &r &r&b&l<< &3&l! &b&l>> Sillycybin Announcement" to all players
+						send " &fYou can join a job by typing [jobs]. Jobs are good for" to all players
+						send "&r &r &fkeeping a consistent flow of income while" to all players
+						send " &fdoing normal things you do with your time on Sillycybin." to all players
+						send " " to all players
+			else if {announce.auto} is false:
+				send "&cAuto announce is false, try set it on by using &l/autoannounce on"
+		else if arg-1 is "report":
+			if {announce.auto} is true:
+				if arg-2 is not set:
+					set {_time} to "5 minutes" parsed as timespan
+					send "&bSuccesfully started &l%arg-1% &rauto announcement! It will be shown in 5 minutes"
+				if arg-2 is set:
+					send "&bSuccesfully started &l%arg-1% &rauto announcement! It will be shown in %arg-2% minutes"
+					set {_time} to "%arg-2% minutes" parsed as timespan
+					while {announce.auto} is true:
+						wait 1 tick
+						wait {_time}
+						send " " to all players
+						send "&r &r &r &r &r &r &r&b&l<< &3&l! &b&l>> Sillycybin Announcement" to all players
+						send "&r &fIf you witness a player hacking or using exploits you" to all players
+						send "&f&lcan you the command [report] to report that specific player." to all players
+						send "&r &r &fthat specific player. You can also make a forums post." to all players
+						send " " to all players
+			else if {announce.auto} is false:
+				send "&cAuto announce is false, try set it on by using &l/autoannounce on"
+		else if arg-1 is "playershops":
+			if {announce.auto} is true:
+				if arg-2 is not set:
+					set {_time} to "5 minutes" parsed as timespan
+					send "&bSuccesfully started &l%arg-1% &rauto announcement! It will be shown in 5 minutes"
+				if arg-2 is set:
+					send "&bSuccesfully started &l%arg-1% &rauto announcement! It will be shown in %arg-2% minutes"
+					set {_time} to "%arg-2% minutes" parsed as timespan
+					while {announce.auto} is true:
+						wait 1 tick
+						wait {_time}
+						send " " to all players
+						send "&r &r &r &r &r &r &r&b&l<< &3&l! &b&l>> Sillycybin Announcement" to all players
+						send " &fPlayershops are available for rent at spawn. Visit the" to all players
+						send "&r &r &fplayershops warp and try to get you a spot!" to all players
+						send " &fyou can sell anything you want to players with no worry!" to all players
+						send " " to all players
+			else if {announce.auto} is false:
+				send "&cAuto announce is false, try set it on by using &l/autoannounce on"
+		else if arg-1 is "donations":
+			if {announce.auto} is true:
+				if arg-2 is not set:
+					set {_time} to "5 minutes" parsed as timespan
+					send "&bSuccesfully started &l%arg-1% &rauto announcement! It will be shown in 5 minutes"
+				if arg-2 is set:
+					send "&bSuccesfully started &l%arg-1% &rauto announcement! It will be shown in %arg-2% minutes"
+					set {_time} to "%arg-2% minutes" parsed as timespan
+					while {announce.auto} is true:
+						wait 1 tick
+						wait {_time}
+						send " " to all players
+						send "&r &r &r &r &r &r &r&b&l<< &3&l! &b&l>> Sillycybin Announcement" to all players
+						send " &fOur server is ran off of donations from the people." to all players
+						send " &fif you enjoy our server and want to see great things." to all players
+						send " &fcontinue to happen please consider donating with [buy]" to all players
+						send " " to all players
+			else if {announce.auto} is false:
+				send "&cAuto announce is false, try set it on by using &l/autoannounce on"
+		else if arg-1 is "suggestions":
+			if {announce.auto} is true:
+				if arg-2 is not set:
+					set {_time} to "5 minutes" parsed as timespan
+					send "&bSuccesfully started &l%arg-1% &rauto announcement! It will be shown in 5 minutes"
+				if arg-2 is set:
+					send "&bSuccesfully started &l%arg-1% &rauto announcement! It will be shown in %arg-2% minutes"
+					set {_time} to "%arg-2% minutes" parsed as timespan
+					while {announce.auto} is true:
+						wait 1 tick
+						wait {_time}
+						send " " to all players
+						send "&r &r &r &r &r &r &r&b&l<< &3&l! &b&l>> Sillycybin Announcement" to all players
+						send " &fSuggestions are always welcome! If you have one please" to all players
+						send "&r &r &fcreate a forums post under the suggestions" to all players
+						send "&fcreate a forums post under the suggestions" to all players
+						send " " to all players
+			else if {announce.auto} is false:
+				send "&cAuto announce is false, try set it on by using &l/autoannounce on"
+		else if arg-1 is "rules":
+			if {announce.auto} is true:
+				if arg-2 is not set:
+					set {_time} to "5 minutes" parsed as timespan
+					send "&bSuccesfully started &l%arg-1% &rauto announcement! It will be shown in 5 minutes"
+				if arg-2 is set:
+					send "&bSuccesfully started &l%arg-1% &rauto announcement! It will be shown in %arg-2% minutes"
+					set {_time} to "%arg-2% minutes" parsed as timespan
+					while {announce.auto} is true:
+						wait 1 tick
+						wait {_time}
+						send " " to all players
+						send "&r &r &r &r &r &r &r&b&l<< &3&l! &b&l>> Sillycybin Announcement" to all players
+						send "&fPlease read the server rules with [rules]. Breaking rules" to all players
+						send "&r &r &fcan result in punishment and nobody wants that." to all players
+						send " " to all players
+			else if {announce.auto} is false:
+				send "&cAuto announce is false, try set it on by using &l/autoannounce on"
+		else if arg-1 is "chemist":
+			if {announce.auto} is true:	
+				if arg-2 is not set:
+					set {_time} to "5 minutes" parsed as timespan
+					send "&bSuccesfully started &l%arg-1% &rauto announcement! It will be shown in 5 minutes"
+				if arg-2 is set:
+					send "&bSuccesfully started &l%arg-1% &rauto announcement! It will be shown in %arg-2% minutes"
+					set {_time} to "%arg-2% minutes" parsed as timespan
+					while {announce.auto} is true:
+						wait 1 tick
+						wait {_time}
+						send " " to all players 
+						send "&r &r &r &r &r &r &r&b&l<< &3&l! &b&l>> Sillycybin Announcement" to all players
+						send "&f You can buy additives to use to create different drugs" to all players 
+						send "&r &r &fif you visit The Chemist in spawn! Information" to all players 
+						send "&fon creating different drugs can be found on the [forums]." to all players 
+						send " " to all players 
+			else if {announce.auto} is false:
+				send "&cAuto announce is false, try set it on by using &l/autoannounce on"
+		else if arg-1 is "scamming":
+			if {announce.auto} is true:
+				if arg-2 is not set:
+					set {_time} to "5 minutes" parsed as timespan
+					send "&bSuccesfully started &l%arg-1% &rauto announcement! It will be shown in 5 minutes"
+				if arg-2 is set:
+					send "&bSuccesfully started &l%arg-1% &rauto announcement! It will be shown in %arg-2% minutes"
+					set {_time} to "%arg-2% minutes" parsed as timespan
+					while {announce.auto} is true:
+						wait 1 tick
+						wait {_time}
+						send " " to all players
+						send "&r &r &r &r &r &r &r&b&l<< &3&l! &b&l>> Sillycybin Announcement" to all players
+						send "&fRemember that &4&lscamming&f is allowed on the server!" to all players
+						send "&r &r &fbe careful when you make purchases or sales!" to all players
+						send "&fOnce you hit &7Supplier&f you can make safe auctions!" to all players
+						send " " to all players 
+			else if {announce.auto} is false:
+				send "&cAuto announce is false, try set it on by using &l/autoannounce on"
+		else if arg-1 is "events":
+			if {announce.auto} is true:
+				if arg-2 is not set:
+					set {_time} to "5 minutes" parsed as timespan
+					send "&bSuccesfully started &l%arg-1% &rauto announcement! It will be shown in 5 minutes"
+				if arg-2 is set:
+					send "&bSuccesfully started &l%arg-1% &rauto announcement! It will be shown in %arg-2% minutes"
+					set {_time} to "%arg-2% minutes" parsed as timespan
+					while {announce.auto} is true:
+						wait 1 tick
+						wait {_time}
+						send " " to all players
+						send "&r &r &r &r &r &r &r&b&l<< &3&l! &b&l>> Sillycybin Announcement" to all players
+						send "&fThanks for downloading my &3&lAutomatic Broadcast" to all players
+						send "&r &r plugin! I hope it will fit your server well!" to all players
+						send "&bIf you need any support please visit our discord!" to all players
+						send " " to all players
+			else if {announce.auto} is false:
+				send "&cAuto announce is false, try set it on by using &l/autoannounce on"
+		else if arg-1 is "drugs":
+			if {announce.auto} is true:
+				if arg-2 is not set:
+					set {_time} to "5 minutes" parsed as timespan
+					send "&bSuccesfully started &l%arg-1% &rauto announcement! It will be shown in 5 minutes"
+				if arg-2 is set:
+					send "&bSuccesfully started &l%arg-1% &rauto announcement! It will be shown in %arg-2% minutes"
+					set {_time} to "%arg-2% minutes" parsed as timespan
+					while {announce.auto} is true:
+						wait 1 tick
+						wait {_time}
+						send " " to all players
+						send "&r &r &r &r &r &r &r&b&l<< &3&l! &b&l>> Sillycybin Announcement" to all players
+						send "&fThanks for downloading my &3&lAutomatic Broadcast" to all players
+						send "&r &r plugin! I hope it will fit your server well!" to all players
+						send "&bIf you need any support please visit our discord!" to all players
+						send " " to all players
+			else if {announce.auto} is false:
+				send "&cAuto announce is false, try set it on by using &l/autoannounce on"
+		else if arg-1 is "gamble":
+			if {announce.auto} is true:
+				if arg-2 is not set:
+					set {_time} to "5 minutes" parsed as timespan
+					send "&bSuccesfully started &l%arg-1% &rauto announcement! It will be shown in 5 minutes"
+				if arg-2 is set:
+					send "&bSuccesfully started &l%arg-1% &rauto announcement! It will be shown in %arg-2% minutes"
+					set {_time} to "%arg-2% minutes" parsed as timespan
+					while {announce.auto} is true:
+						wait 1 tick
+						wait {_time}
+						send " " to all players
+						send "&r &r &r &r &r &r &r&b&l<< &3&l! &b&l>> Sillycybin Announcement" to all players
+						send "&fThanks for downloading my &3&lAutomatic Broadcast" to all players
+						send "&r &r plugin! I hope it will fit your server well!" to all players
+						send "&bIf you need any support please visit our discord!" to all players
+						send " " to all players
+			else if {announce.auto} is false:
+				send "&cAuto announce is false, try set it on by using &l/autoannounce on"
+		else if arg-1 is "vote":
+			if {announce.auto} is true:
+				if arg-2 is not set:
+					set {_time} to "5 minutes" parsed as timespan
+					send "&bSuccesfully started &l%arg-1% &rauto announcement! It will be shown in 5 minutes"
+				if arg-2 is set:
+					send "&bSuccesfully started &l%arg-1% &rauto announcement! It will be shown in %arg-2% minutes"
+					set {_time} to "%arg-2% minutes" parsed as timespan
+					while {announce.auto} is true:
+						wait 1 tick
+						wait {_time}
+						send " " to all players
+						send "&r &r &r &r &r &r &r&b&l<< &3&l! &b&l>> Sillycybin Announcement" to all players
+						send "&fThanks for downloading my &3&lAutomatic Broadcast" to all players
+						send "&r &r plugin! I hope it will fit your server well!" to all players
+						send "&bIf you need any support please visit our discord!" to all players
+						send " " to all players
+			else if {announce.auto} is false:
+				send "&cAuto announce is false, try set it on by using &l/autoannounce on"
+		else if arg-1 is "development":
+			if {announce.auto} is true:
+				if arg-2 is not set:
+					set {_time} to "5 minutes" parsed as timespan
+					send "&bSuccesfully started &l%arg-1% &rauto announcement! It will be shown in 5 minutes"
+				if arg-2 is set:
+					send "&bSuccesfully started &l%arg-1% &rauto announcement! It will be shown in %arg-2% minutes"
+					set {_time} to "%arg-2% minutes" parsed as timespan
+					while {announce.auto} is true:
+						wait 1 tick
+						wait {_time}
+						send " " to all players
+						send "&r &r &r &r &r &r &r&b&l<< &3&l! &b&l>> Sillycybin Announcement" to all players
+						send "&fThanks for downloading my &3&lAutomatic Broadcast" to all players
+						send "&r &r plugin! I hope it will fit your server well!" to all players
+						send "&bIf you need any support please visit our discord!" to all players
+						send " " to all players
+			else if {announce.auto} is false:
+				send "&cAuto announce is false, try set it on by using &l/autoannounce on"
+		else if arg-1 is "helpmenu":
+			if {announce.auto} is true:
+				if arg-2 is not set:
+					set {_time} to "5 minutes" parsed as timespan
+					send "&bSuccesfully started &l%arg-1% &rauto announcement! It will be shown in 5 minutes"
+				if arg-2 is set:
+					send "&bSuccesfully started &l%arg-1% &rauto announcement! It will be shown in %arg-2% minutes"
+					set {_time} to "%arg-2% minutes" parsed as timespan
+					while {announce.auto} is true:
+						wait 1 tick
+						wait {_time}
+						send " " to all players
+						send "&r &r &r &r &r &r &r&b&l<< &3&l! &b&l>> Sillycybin Announcement" to all players
+						send "&fThanks for downloading my &3&lAutomatic Broadcast" to all players
+						send "&r &r plugin! I hope it will fit your server well!" to all players
+						send "&bIf you need any support please visit our discord!" to all players
+						send " " to all players
+			else if {announce.auto} is false:
+				send "&cAuto announce is false, try set it on by using &l/autoannounce on"
+		else if arg-1 is "discord":
+			if {announce.auto} is true:
+				if arg-2 is not set:
+					set {_time} to "5 minutes" parsed as timespan
+					send "&bSuccesfully started &l%arg-1% &rauto announcement! It will be shown in 5 minutes"
+				if arg-2 is set:
+					send "&bSuccesfully started &l%arg-1% &rauto announcement! It will be shown in %arg-2% minutes"
+					set {_time} to "%arg-2% minutes" parsed as timespan
+					while {announce.auto} is true:
+						wait 1 tick
+						wait {_time}
+						send " " to all players
+						send "&r &r &r &r &r &r &r&b&l<< &3&l! &b&l>> Sillycybin Announcement" to all players
+						send "&fThanks for downloading my &3&lAutomatic Broadcast" to all players
+						send "&r &r plugin! I hope it will fit your server well!" to all players
+						send "&bIf you need any support please visit our discord!" to all players
+						send " " to all players
+			else if {announce.auto} is false:
+				send "&cAuto announce is false, try set it on by using &l/autoannounce on"
+		else if arg-1 is "off":
+			if {announce.auto} is true:
+				set {announce.auto} to false
+				send "&bAuto announce set to &loff!"
+			else if {announce.auto} is false:
+				send "&cIts already set to &loff!"
+			stop
+		else if arg-1 is "clear":
+			if {announce.auto} is true:
+				set {announce.auto} to false
+			execute console command "sk reload AnnouncementSkript"
+			send "&bAnnouncements cleared!"
+		else:
+			send "&cUsage: /autoannounce <text/on/off> <time>"
+			stop
+
+
+command /acheck:
+	trigger:
+		send "&aNow its %{announce.auto}%"
